@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .tbox1
+            {
+                background: #0025FF;
+                padding-top: 40px;
+                color: white;
+                padding-right: 20px;
+            }
+            .tbox2
+            {
+                background: #0025FF;
+                padding-top: 40px;
+                color: white;
+            }
+            .tbox3
+            {
+                padding-top: 650px;
+            }
+            .tbox4
+            {
+                line-height: 100px;
+                font-size: 65px;
+                background-color: white;
+                color: black;
+                text-decoration: none;
+            }
+            .tbox4:hover
+            {
+                width: 200px;
+                height: 50px;
+                background-color: #0025FF;
+                color: white;
+            }
+            .tbox5
+            {
+                line-height: 100px;
+                font-size: 100px;
+                color: white;
+                text-align: center;
+            }
+            .tbox6
+            {
+                padding-left: 50px;
+            }
+            .tbox7
+            {
+                background: #000;
+                color: #0025FF;
+                line-height: 100px;
+                font-size: 70px;
+                text-align: center;
+                
+            }
+            
+            .div1
+            {   
+                overflow:hidden;
+            }
+            .tbox8
+            {   
+                transition: scale 0.5s, transform 0.5s;
+                scale:1.10;
+                
+                
+            }
+            .tbox8:hover
+            {
+                transform: rotate(5deg);
+                scale:1.5;
+            }
+            .tbox9
+            {
+                background: #0025FF;
+            }
+
+            .tbox17
+            {
+                width: 170px;
+            }
+            .tbox17:hover
+            {
+                
+                animation: bounceOut 0.5s linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes bounceOut {
+            0% {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+            30% {
+              opacity: 1;
+              -webkit-transform: scale(.80);
+              transform: scale(.80);
+            }
+            99% {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+           
+            100% {
+              opacity: 1;
+            }
+          }
+
+            .tbox10
+            {
+                width: 200px;
+                height: 150px;
+
+            }
+            .tbox10:hover
+            {
+                
+                animation: bounceOut 0.5s linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes bounceOut {
+            0% {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+            30% {
+              opacity: 1;
+              -webkit-transform: scale(.80);
+              transform: scale(.80);
+            }
+            99% {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+           
+            100% {
+              opacity: 1;
+            }
+          }
+            .tbox11
+            {
+                width: 200px;
+            }
+            .tbox13
+            {
+                color: white;
+                padding-top: 20px;
+            }
+            .tbox14
+            {
+                width: 100px;
+            }
+            .tbox15
+            {
+                width: 400px;
+                padding-top: 20px;
+            }
+            .tbox16
+            {
+              
+                color: white;
+            }
+            .body
+            {
+                background:blue;
+            }
+            .tbox17
+            {
+                align-content: center;
+            }
+
+            .button-large:not(.no-button-large),
+button.button-large:not(.no-button-large),
+button.button-large:not(.soda-shop-coming-soon-btn) {
+  display: inline-block;
+  font-size: 1em;
+  height: 2.3em;
+  padding: .5em 1.85em;
+  border: 2px solid #fff;
+  border-radius: 1.8em;
+  background: transparent;
+  color: #fff;
+  font-family: PepsiOwners, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: background-color .1s ease-out, color .1s ease-out;
+  transition: background-color .1s ease-out, color .1s ease-out
+}
+
+.button-large:not(.no-button-large) a,
+button.button-large:not(.no-button-large) a {
+  color: #fff
+}
+
+.button-large:not(.no-button-large):hover,
+button.button-large:not(.no-button-large):hover,
+button.button-large:not(.shop-coming-soon-btn):hover,
+.button-large:not(.no-button-large):focus,
+button.button-large:not(.no-button-large):focus,
+button.button-large:not(.shop-coming-soon-btn):focus {
+  background-color: #fff;
+  color: #0025ff;
+  opacity: 1
+}
+
+.button-large-active,
+.button-large:not(.no-button-large):hover a,
+button.button-large:not(.no-button-large):hover a {
+  color: #0065c3 !important
+}
+
+.button-large-active {
+  background-color: #fff !important
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+.character,
+.character-under {
+  display: block;
+  float: left;
+  pointer-events: none
+}
+
+.character-under {
+  top: 1rem;
+  position: relative
+}
+.tbox18
+{
+    padding-top: 80px;
+}
+
+            
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+            <div class="row" style="background-color: #0025FF;width:1530px;position:fixed">
+                <div class="col-1 tbox17">
+                    <img src="img1.png" />
+                </div>
+                <div class="col-8">
+
+                        <div class="row">
+                            <div class="col-1" style="width: 20px;"></div>
+                            <div class="col-3 tbox1">
+                                <h4><b>VIEW PRODUCTS</b></h4>
+                            </div>
+                        
+                        
+                            <div class="col-3 tbox2">
+                                <h4><b>CONTACT US</b></h4>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col-3 tbox17">
+                <a href="https://contact.pepsico.com/pepsi/product-locator" class="button-large" target="_blank" aria-label="BUY
+                    PEPSI PRODUCTS, opens in a new tab" tabindex="0">
+                    <span class="character" role="button">
+                        B
+                        <br>
+                        <br>
+                        B
+                        <br>
+                        </span>
+                        <span class="character" role="button">
+                        U
+                        <br>
+                        <br>
+                        U
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        Y
+                        <br>
+                        <br>
+                        Y
+                        <br>
+                    </span>
+                    <span class="character">&nbsp;</span>
+                    <span class="character" role="button">
+                        P
+                        <br>
+                        <br>
+                        P
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        E
+                        <br>
+                        <br>
+                        E
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        P
+                        <br>
+                        <br>
+                        P
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        S
+                        <br>
+                        <br>
+                        S
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        I<br>
+                        <br>
+                        I<br>
+                    </span>
+                    <span class="character">&nbsp;</span>
+                    <span class="character" role="button">
+                        P
+                        <br>
+                        <br>
+                        P
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        R
+                        <br>
+                        <br>
+                        R
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        O
+                        <br>
+                        <br>
+                        O
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        D
+                        <br>
+                        <br>
+                        D
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        U
+                        <br>
+                        <br>
+                        U
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        C
+                        <br>
+                        <br>
+                        C
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        T
+                        <br>
+                        <br>
+                        T
+                        <br>
+                    </span>
+                    <span class="character" role="button">
+                        S
+                        <br>
+                        <br>
+                        S
+                        <br>
+                    </span>
+                </a>
+
+                </div>
+            </div>
+            <div class="row tbox18">
+                <div class="col-12">
+
+                    <video width="100%" height="900px" style="margin:0px;" controls autoplay muted>
+                        <source src="vid1.mp4"  type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video>
+
+                </div>
+            </div>
+            <div class="row" style="background-image: url('img3.png'); width: 100%; height: 800px;">
+                <div class="col-4"></div>
+                <div class="col-3 tbox3">
+                    <a href="#" class="tbox4">SHOP NOW</a>
+                            
+
+                </div>
+            </div>
+            <div class="row" style="background-image: url('img7.png'); width: 100%; height: 960px;">
+                <div class="col-12 tbox5">
+                           <b> GET WILD WITH
+                        <br>
+                        PEPSI WILD CHERRY
+                        </b><br>
+                        <div class="row" style="height: 20px;">
+                            <div class="col-12"></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-1" style="width: 20px;">
+
+                            </div>
+                            <div class="col-6">
+                                <img src="img8.png" width="700px" height="380px">
+                            </div>
+                            
+                            <div class="col-5">
+                                <img src="img9.png" width="700px" height="380px">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-6 tbox6">
+                                <b><a href="#" class="tbox4">#1 FAN</a></b>
+                            </div>
+                            <div class="col-6 tbox7">
+                                <b><a href="#" class="tbox4">NURSERY RHYMEZ</a></b>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <video width="100%" height="900px" style="margin:0px;" controls autoplay muted>
+                        <source src="vid2.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video>
+
+                </div>
+            </div>
+            <div class="row tbox7">
+                <div class="col-12">
+                    <h1>STAY ON THE PULSE. FOLLOW PEPSI.</h1>
+                    <div class="row" boder="0px" cellspacing="0px" cellpadding="0px" >
+                        <div class="col-2 div1" >
+                            <img src="img15.png" class="tbox8" >
+                        </div>
+                        <div class="col-2 div1" >
+                            <img src="img16.png" class="tbox8">
+                        </div>
+                        <div class="col-2 div1" >
+                            <img src="img17.png" class="tbox8">
+                        </div>
+                        <div class="col-2 div1" >
+                            <img src="img18.png" class="tbox8">
+                        </div>
+                        <div class="col-2 div1" >
+                            <img src="img19.png" class="tbox8">
+                        </div>
+                        <div class="col-2 div1" >
+                            <img src="img20.png" class="tbox8">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" style="height: 70px;"></div>
+            </div>
+            <div class="row tbox9">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12" style="height: 90px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="img21.png" class="tbox10">
+                        </div>
+                        <div class="col-1 tbox11">
+
+                        </div>
+                        <div class="col-2 tbox13">
+                            <b>
+                                <h5>
+                                    CONTACT US
+                                    <br>
+                                    TERMS & CONDITIONS
+                                    <br>
+                                    PRIVACY POLICY
+                                </h5>
+                            </b>
+                        </div>
+                        
+                        <div class="col-2 tbox13">
+                            <b>
+                                <h5>
+                                    COPYRIGHT
+                                    <br>
+                                    PRODUCT FACTS
+                                    <br>
+                                    STORE LOCATOR
+                                </h5>
+                            </b>
+                        </div>
+                        
+                        <div class="col-2 tbox13">
+                            <b>
+                                <h5>
+                                    SERVE PEPSI
+                                    <br>
+                                    ABOUT OUR ADS
+                                    <br>
+                                    Careers
+                                </h5>
+                            </b>
+                        </div>
+                        <div class="col-3">
+                            <img src="img22.png" class="tbox15">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10" style="width: 1286px;"></div>
+                        <div class="col-2 tbox16" >
+                            <u>
+                                <b>
+                                    <h5>
+                                        COOKIE PREFERENCES
+                                    </h5>
+                                </b>
+                            </u>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+    </body>
+</html>
